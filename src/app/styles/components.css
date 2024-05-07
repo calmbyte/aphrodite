@@ -80,16 +80,18 @@
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 20px;
     z-index: -1;
+    background: linear-gradient(#323237, #323237) padding-box;
     @apply w-full h-full absolute;
   }
   .card:hover .card-border {
-    background: linear-gradient(
-          rgb(var(--background-rgb)),
-          rgb(var(--background-rgb))
-        )
-        padding-box,
+    background: linear-gradient(#323237, #323237) padding-box,
       linear-gradient(to right, #fffcdf 43%, #fdf49f 65%, #8ecde8 84%)
         border-box;
     border: 1px solid transparent;
+  }
+
+
+  .process-path {
+    @apply mt-8 md:mt-[120px] py-12 px-4 w-[1202px] mx-auto bg-light-gray rounded-[20px];
   }
 }

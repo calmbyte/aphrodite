@@ -1,5 +1,6 @@
 import Card from './ui/Card';
 import HeroBanner from './ui/HeroBanner';
+import ProcessPath from './ui/ProcessPath';
 import CardWithImage from './ui/CardWithImage';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <CardWithImage />
         <Card />
       </section>
+      <ProcessPath />
     </main>
   );
 }
