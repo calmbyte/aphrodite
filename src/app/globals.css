@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'styles/components.css';
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 32, 32, 38;
 
   --primary-color: oklch(24.6% 0.011 285);
 
@@ -18,64 +19,13 @@
   --gray: #adadad;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
-  }
-}
-
-@layer components {
-  .header {
-    height: 96px;
-    @apply flex items-center justify-between px-[64px];
-  }
-
-  .nav {
-    @apply flex items-center gap-[42px];
-    & a:hover {
-      color: var(--gray);
-    }
-  }
-
-  .button {
-    font-size: 1rem;
-    display: inline-block;
-    text-align: center;
-    padding: 10px 12px;
-    font-weight: 500;
-    border-radius: 8px;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    &:hover {
-      background-color: var(--secondary-color-accent);
-    }
-
-    &:focus {
-      outline: 2px solid;
-      outline-offset: 0;
-      outline-color: #fcef77;
-    }
-    &:active {
-      background-color: #fcef77;
-      outline: 0;
-    }
   }
 }

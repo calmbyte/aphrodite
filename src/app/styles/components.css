@@ -1,0 +1,69 @@
+@tailwind components;
+
+@layer components {
+  .header {
+    height: 96px;
+    @apply flex items-center justify-between px-2 md:px-[64px];
+  }
+
+  .nav {
+    @apply hidden md:flex items-center gap-[42px];
+    & a:hover {
+      color: var(--gray);
+    }
+  }
+
+  .button {
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 12px;
+    font-weight: 500;
+    border-radius: 8px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+  .button:hover {
+    background-color: var(--secondary-color-accent);
+  }
+  .button:focus {
+    outline: 2px solid;
+    outline-offset: 0;
+    outline-color: #fcef77;
+  }
+  .button:active {
+    background-color: #fcef77;
+    outline: 0;
+  }
+
+  .button-translucent {
+    @apply button;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  .hero-banner {
+    margin: 0 auto;
+    @apply w-full md:w-[40%] mt-16 md:mt-28 text-center;
+  }
+
+  .title {
+    @apply text-[60px] font-[700];
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      to right,
+      #fffcdf 43%,
+      #fdf49f 65.37%,
+      #8ecde8 75.91%
+    );
+    background-clip: text;
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+  }
+}

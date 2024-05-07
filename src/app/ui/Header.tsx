@@ -9,7 +9,7 @@ export default function Header() {
         <a href="#howTo">How To</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <div>
+      <div className="flex items-center">
         <a className="button w-[120px]" href="https://app.calmbyte.xyz/sign-up">
           Sign Up
         </a>
