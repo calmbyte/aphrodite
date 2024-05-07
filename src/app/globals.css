@@ -6,6 +6,16 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --primary-color: oklch(24.6% 0.011 285);
+
+  --secondary-color-l: 95.9%;
+  --secondary-color: oklch(95.9% 0.086 102.9);
+  --secondary-color-accent: oklch(
+    from var(--secondary-color) calc(var(--secondary-color-l) - 10%) c h
+  );
+
+  --gray: #adadad;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,5 +39,43 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .header {
+    height: 96px;
+    @apply flex items-center justify-between px-[64px];
+  }
+
+  .nav {
+    @apply flex items-center gap-[42px];
+    & a:hover {
+      color: var(--gray);
+    }
+  }
+
+  .button {
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 12px;
+    font-weight: 500;
+    border-radius: 8px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    &:hover {
+      background-color: var(--secondary-color-accent);
+    }
+
+    &:focus {
+      outline: 2px solid;
+      outline-offset: 0;
+      outline-color: #fcef77;
+    }
+    &:active {
+      background-color: #fcef77;
+      outline: 0;
+    }
   }
 }
