@@ -19,7 +19,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col-reverse md:flex-row gap-12 justify-between w-full px-16 my-16">
+    <footer className="footer">
       <div className="flex flex-col gap-4">
         <a
           href="mailto: admin@calmbyte.xyz"
