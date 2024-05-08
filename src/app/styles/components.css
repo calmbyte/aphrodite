@@ -44,7 +44,7 @@
     border: 1px solid #fff;
     color: #fff;
     background-color: transparent;
-    &:hover {
+    &:hover:not(:disabled) {
       background-color: rgba(255, 255, 255, 0.2);
     }
   }
