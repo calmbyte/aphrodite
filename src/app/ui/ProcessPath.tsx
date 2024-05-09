@@ -6,9 +6,9 @@ export default function ProcessPath() {
       <h2 className="text-[40px] text-center">Process of creating your events </h2>
       <div className="mb-14 mt-8 px-32 text-center">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Has been the
-        industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the
-        printing and typesetting industry. Has been the industry's standard dummy text ever since
-        the 1500s.
+        industry standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the
+        printing and typesetting industry. Has been the industry standard dummy text ever since the
+        1500s.
       </div>
       <section className="flex gap-10">
         <ProcessPathCard

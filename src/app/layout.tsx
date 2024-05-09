@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
-import { Inter, Noto_Sans } from 'next/font/google';
+import { Noto_Sans } from 'next/font/google';
 import './globals.css';
 import Header from './ui/Header';
 
-const inter = Inter({ subsets: ['latin'] });
 const notoSans = Noto_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
