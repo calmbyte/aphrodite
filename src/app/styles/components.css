@@ -23,14 +23,17 @@
     color: var(--primary-color);
     background-color: var(--secondary-color);
   }
-  .button:hover {
+  .button:disabled {
+    opacity: 0.6;
+  }
+  .button:hover:not(:disabled) {
     background-color: var(--secondary-color-accent);
   }
   .button:focus {
     outline-offset: 0;
     outline: #fcef77 solid 2px;
   }
-  .button:active {
+  .button:active:not(:disabled) {
     background-color: #fcef77;
     outline: 0;
   }
@@ -40,7 +43,7 @@
     border: 1px solid #fff;
     color: #fff;
     background-color: transparent;
-    &:hover {
+    &:hover:not(:disabled) {
       background-color: rgba(255, 255, 255, 0.2);
     }
   }
@@ -144,5 +147,21 @@
   @keyframes gradient {
     0% {background-position: 100% 0}
     100% {background-position: 0 0}
+  }
+
+  .contact-us {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+    @apply flex flex-col md:flex-row mx-4 md:mx-16 md:px-14 pb-14 mt-8 md:mt-[136px] gap-3;
+  }
+
+  .footer {
+    @apply flex flex-col-reverse md:flex-row gap-12 justify-between w-full px-4 md:px-16 my-16;
+  }
+
+  .input {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid rgb(177, 177, 178);
   }
 }

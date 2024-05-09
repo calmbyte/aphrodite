@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         'light-gray': '#323237',
+        'translucent-8': 'rgba(255, 255, 255, 0.8)',
       },
     },
   },
