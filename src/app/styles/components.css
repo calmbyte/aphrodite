@@ -48,6 +48,15 @@
     }
   }
 
+  .button-black {
+    @apply button;
+    color: #fff;
+    background-color: var(--primary-color);
+    &:hover:not(:disabled) {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
   .hero-banner {
     margin: 0 auto;
     @apply w-full md:w-[40%] flex flex-col items-center mt-16 md:mt-28 text-center;
@@ -163,5 +172,20 @@
     border-radius: 8px;
     padding: 12px;
     border: 1px solid rgb(177, 177, 178);
+  }
+
+  .adBanner {
+    @apply flex flex-row justify-center items-center py-12;
+    background-color: #FCF5B1E5;
+  }
+
+  .adBannerTitle {
+    font-size: 40px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 600;
+
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(66deg, #363636 2%, #313131 35%, #85807b 40%, #837f7f 46%, rgba(196, 239, 236, 0.8) 47%, #837f7f 48%, #837f7f 50%, #403e3e 54%, #837f7f 56%, #403e3e 67%, #050505 98%);
   }
 }

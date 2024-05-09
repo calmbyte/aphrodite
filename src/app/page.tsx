@@ -5,6 +5,7 @@ import HeroBanner from './ui/HeroBanner';
 import ProcessPath from './ui/ProcessPath';
 import EllipseBackground from './ui/EllipseBackground';
 import FAQ from './ui/FAQ';
+import AdBanner from '@/app/ui/AdBanner';
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         </div>
       </EllipseBackground>
       <FAQ />
+      <AdBanner />
       <ContactUs />
       <Footer />
     </main>

@@ -21,7 +21,7 @@ export default function FAQ() {
   ];
 
   return (
-    <main className="flex flex-col justify-center overflow-hidden w-[1202px] mx-auto">
+    <main className="flex flex-col justify-center overflow-hidden w-[1202px] mx-auto pb-32">
       <h1 className="text-3xl font-semibold mb-4">FAQ</h1>
 
       <div className="divide-y divide-slate-200">
