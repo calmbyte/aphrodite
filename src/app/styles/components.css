@@ -27,9 +27,8 @@
     background-color: var(--secondary-color-accent);
   }
   .button:focus {
-    outline: 2px solid;
     outline-offset: 0;
-    outline-color: #fcef77;
+    outline: #fcef77 solid 2px;
   }
   .button:active {
     background-color: #fcef77;
@@ -72,9 +71,7 @@
     @apply relative flex flex-col w-full md:w-[580px] overflow-hidden;
   }
   .card-content {
-    padding: 0 42px;
-    padding-top: 42px;
-    padding-bottom: 25px;
+    padding: 42px 42px 25px;
   }
   .card-border {
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -90,8 +87,62 @@
     border: 1px solid transparent;
   }
 
-
   .process-path {
-    @apply mt-8 md:mt-[120px] py-12 px-4 w-[1202px] mx-auto bg-light-gray rounded-[20px];
+    @apply flex flex-col mt-8 md:mt-[120px] py-12 px-4 w-[1202px] mx-auto rounded-[20px];
+    background-color: rgba(255, 255, 255, 0.08);
+    border: solid 1px rgba(255, 255, 255, 0.12);
+  }
+
+  .process-path-card {
+    @apply flex flex-col flex-1 h-[300px] gap-4 rounded-[20px] py-5 px-5;
+    border: solid 1px rgba(255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.08);
+    position: relative;
+  }
+
+  .process-path-card-arrow {
+    position: absolute;  right: -60px;
+    &.top {
+      top: -10px;
+    }
+    &.bottom {
+      bottom: -10px;
+    }
+  }
+
+  .ellipse-background {
+    width: 100%;
+    background-image: url('/ellipse.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .accordion-title {
+    color: #ffffff;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 40px;
+    font-size: 1.1rem;
+  }
+
+  .animated-text {
+    background: linear-gradient(
+            to right,
+            #fffcdf 43%,
+            #fdf49f 65%,
+            #8ecde8 84%
+
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    animation: gradient 1s forwards;
+  }
+
+  @keyframes gradient {
+    0% {background-position: 100% 0}
+    100% {background-position: 0 0}
   }
 }

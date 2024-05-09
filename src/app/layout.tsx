@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Noto_Sans } from 'next/font/google';
 import './globals.css';
 import Header from './ui/Header';
 
 const inter = Inter({ subsets: ['latin'] });
+const notoSans = Noto_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'CalmByte AI',
@@ -17,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={notoSans.className}>
         <Header />
         {children}
       </body>

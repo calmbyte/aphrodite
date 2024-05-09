@@ -7,8 +7,8 @@ export default function HeroBanner() {
       </p>
       <a
         href="https://app.calmbyte.xyz/"
-        className="button-translucent mt-[24px] w-[162px]"
-      >
+        target="_blank"
+        className="button-translucent mt-[24px] w-[162px]">
         Try Now
       </a>
     </section>
