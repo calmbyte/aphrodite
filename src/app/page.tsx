@@ -15,14 +15,13 @@ export default function Home() {
       <ProcessPath />
       <EllipseBackground>
         {/* TMP */}
-        <div className="w-[1202px] mx-auto flex flex-col justify-center items-center">
+        <div className="w-full mx-auto flex flex-col justify-center items-center">
           <p className="text-gradient text-[40px] text-center mt-32">
             Engage your event attendees with an AI Assistant
           </p>
           <div
+            className="max-md:w-full max-md:px-10 max-md:h-[300px] w-[900px] h-[600px]"
             style={{
-              width: '900px',
-              height: '600px',
               backgroundColor: '#202026',
               opacity: 0.8,
               marginTop: '50px',

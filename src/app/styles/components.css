@@ -100,13 +100,12 @@
   }
 
   .process-path {
-    @apply flex flex-col mt-8 md:mt-[120px] py-12 px-4 w-[1202px] mx-auto rounded-[20px];
     background-color: rgba(255, 255, 255, 0.08);
     border: solid 1px rgba(255, 255, 255, 0.12);
   }
 
   .process-path-card {
-    @apply flex flex-col flex-1 h-[300px] gap-4 rounded-[20px] py-5 px-5;
+    @apply flex flex-col flex-1 min-h-[300px] md:min-h-[150px] gap-4 rounded-[20px] py-5 px-5;
     border: solid 1px rgba(255, 255, 255, 0.12);
     background-color: rgba(255, 255, 255, 0.08);
     position: relative;
@@ -175,12 +174,13 @@
   }
 
   .adBanner {
-    @apply flex flex-row justify-center items-center py-12;
+    @apply flex flex-row w-full justify-center items-center py-10;
     background-color: #FCF5B1E5;
   }
 
   .adBannerTitle {
     font-size: 40px;
+    text-align: center;
     -webkit-background-clip: text;
     background-clip: text;
     font-weight: 600;
