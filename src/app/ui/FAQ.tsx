@@ -21,7 +21,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <main className="flex flex-col justify-center overflow-hidden w-full pb-32 max-md:px-10 max-lg:px-28 px-56 mt-8 md:mt-[120px]">
+    <main className="section-container flex flex-col justify-center overflow-hidden pb-32 mt-8 md:mt-[120px]">
       <h1 className="text-3xl font-semibold mb-4">FAQ</h1>
 
       <div className="divide-y divide-slate-200">

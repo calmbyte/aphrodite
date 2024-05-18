@@ -2,7 +2,7 @@ import ProcessPathCard from '@/app/ui/ProcessPathCard';
 
 export default function ProcessPath() {
   return (
-    <section id="howTo" className="flex flex-col mt-8 md:mt-[120px] w-full px-4 lg:px-2 xl:px-56">
+    <section id="howTo" className="section-container flex flex-col mt-8 md:mt-[120px]">
       <div className="process-path mx-auto rounded-[20px] w-full py-12 px-4">
         <h2 className="text-[40px] text-center">Process of creating your events </h2>
         <div className="sm:px-32 px-0 mb-14 mt-8 text-center">

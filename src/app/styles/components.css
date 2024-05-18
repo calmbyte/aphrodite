@@ -67,12 +67,7 @@
   }
 
   .text-gradient {
-    background: linear-gradient(
-      to right,
-      #fffcdf 43%,
-      #fdf49f 65%,
-      #8ecde8 84%
-    );
+    background: linear-gradient(to right, #fffcdf 43%, #fdf49f 65%, #8ecde8 84%);
     background-clip: text;
     background-size: contain;
     -webkit-text-fill-color: transparent;
@@ -80,7 +75,7 @@
 
   .card {
     border-radius: 20px;
-    @apply relative flex flex-col w-full md:w-[580px] overflow-hidden;
+    @apply relative flex flex-col w-full overflow-hidden;
   }
   .card-content {
     padding: 42px 42px 25px;
@@ -93,9 +88,9 @@
     @apply w-full h-full absolute;
   }
   .card:hover .card-border {
-    background: linear-gradient(#323237, #323237) padding-box,
-      linear-gradient(to right, #fffcdf 43%, #fdf49f 65%, #8ecde8 84%)
-        border-box;
+    background:
+      linear-gradient(#323237, #323237) padding-box,
+      linear-gradient(to right, #fffcdf 43%, #fdf49f 65%, #8ecde8 84%) border-box;
     border: 1px solid transparent;
   }
 
@@ -112,7 +107,8 @@
   }
 
   .process-path-card-arrow {
-    position: absolute;  right: -60px;
+    position: absolute;
+    right: -60px;
     &.top {
       top: -10px;
     }
@@ -138,13 +134,7 @@
   }
 
   .animated-text {
-    background: linear-gradient(
-            to right,
-            #fffcdf 43%,
-            #fdf49f 65%,
-            #8ecde8 84%
-
-    );
+    background: linear-gradient(to right, #fffcdf 43%, #fdf49f 65%, #8ecde8 84%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -153,17 +143,21 @@
   }
 
   @keyframes gradient {
-    0% {background-position: 100% 0}
-    100% {background-position: 0 0}
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
   }
 
   .contact-us {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
-    @apply flex flex-col md:flex-row mx-4 md:mx-16 md:px-14 pb-14 mt-8 md:mt-[136px] gap-3;
+    @apply flex flex-col md:flex-row mx-4 md:mx-16 md:px-14 mt-8 md:mt-[136px] gap-3;
   }
 
   .footer {
-    @apply flex flex-col-reverse md:flex-row gap-12 justify-between w-full px-4 md:px-16 my-16;
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+    @apply flex flex-col-reverse md:flex-row gap-12 justify-between mx-4 md:mx-[64px] md:px-16 my-16 pt-14;
   }
 
   .input {
@@ -175,7 +169,7 @@
 
   .adBanner {
     @apply flex flex-row w-full justify-center items-center py-10;
-    background-color: #FCF5B1E5;
+    background-color: #fcf5b1e5;
   }
 
   .adBannerTitle {
@@ -186,6 +180,23 @@
     font-weight: 600;
 
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(66deg, #363636 2%, #313131 35%, #85807b 40%, #837f7f 46%, rgba(196, 239, 236, 0.8) 47%, #837f7f 48%, #837f7f 50%, #403e3e 54%, #837f7f 56%, #403e3e 67%, #050505 98%);
+    background-image: linear-gradient(
+      66deg,
+      #363636 2%,
+      #313131 35%,
+      #85807b 40%,
+      #837f7f 46%,
+      rgba(196, 239, 236, 0.8) 47%,
+      #837f7f 48%,
+      #837f7f 50%,
+      #403e3e 54%,
+      #837f7f 56%,
+      #403e3e 67%,
+      #050505 98%
+    );
+  }
+
+  .section-container {
+    @apply max-w-screen-xl mx-4 md:mx-auto;
   }
 }

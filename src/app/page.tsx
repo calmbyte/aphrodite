@@ -14,8 +14,8 @@ export default function Home() {
       <About />
       <ProcessPath />
       {/* <EllipseBackground> */}
-        {/* TMP */}
-        {/* <div className="w-full mx-auto flex flex-col justify-center items-center">
+      {/* TMP */}
+      {/* <div className="w-full mx-auto flex flex-col justify-center items-center">
           <p className="text-gradient text-[40px] text-center mt-32">
             Engage your event attendees with an AI Assistant
           </p>
@@ -33,7 +33,6 @@ export default function Home() {
       <FAQ />
       <AdBanner />
       <ContactUs />
-      <Footer />
     </main>
   );
 }
