@@ -85,6 +85,8 @@
     border-radius: 20px;
     z-index: -1;
     background: linear-gradient(#323237, #323237) padding-box;
+    left: 0;
+    top: 0;
     @apply w-full h-full absolute;
   }
   .card:hover .card-border {
@@ -106,6 +108,17 @@
     position: relative;
   }
 
+  .process-path-card:hover .card-border {
+    background:
+            linear-gradient(#323237, #323237) padding-box,
+            linear-gradient(to right, #fffcdf 43%, #fdf49f 65%, #8ecde8 84%) border-box;
+    border: 1px solid transparent;
+  }
+
+  .process-path-card:hover .process-path-title {
+    color: rgba(255, 255, 255, 1);
+  }
+
   .process-path-card-arrow {
     position: absolute;
     right: -60px;
@@ -115,6 +128,10 @@
     &.bottom {
       bottom: -10px;
     }
+  }
+
+  .process-path-title {
+   color: rgba(255, 255, 255, 0.6);
   }
 
   .ellipse-background {
@@ -198,5 +215,21 @@
 
   .section-container {
     @apply max-w-screen-xl mx-4 md:mx-auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    .process-path-card-arrow {
+      bottom: -30px;
+      rotate: 90deg;
+      transform: scaleY(-1);
+      &.top {
+        left: -50px;
+        top: inherit;
+      }
+      &.bottom {
+        right: -50px;
+        bottom: -30px;
+      }
+    }
   }
 }
