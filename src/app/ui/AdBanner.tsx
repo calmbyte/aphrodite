@@ -2,7 +2,7 @@ export default function AdBanner() {
   return (
     <div className="adBanner">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="adBannerTitle">Start creating AI powered events!</h1>
+        <h1 className="adBannerTitle">Start creating your AI Assistant!</h1>
         <a
           href="https://app.calmbyte.xyz/"
           target="_blank"
