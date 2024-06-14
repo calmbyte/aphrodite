@@ -5,7 +5,7 @@ export default function CardWithImage() {
     <div className="card">
       <div className="card-border"></div>
       <div className="card-content">
-        <h2 className="text-[40px] mb-6">Empower Your Business with AI Assistance</h2>
+        <h2 className="text-[40px] mb-6">About Us</h2>
         <p>
           At CalmByte, we understand the intricate demands of companies. With years of expertise in
           the industry, we&apos;ve developed an
