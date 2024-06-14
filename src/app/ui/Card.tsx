@@ -6,19 +6,18 @@ export default function Card() {
         <h2 className="text-[40px] mb-4">Our Solutions</h2>
         <ul className="pl-4 list-disc text-[20px]">
           <li>
-            <span className="font-bold">Intelligent Scheduling:</span> Our AI assistant helps users
-            efficiently plan event schedules by analyzing various factors such as venue
-            availability, attendee preferences, and optimal timing.
+            <span className="font-bold">Personalized AI Assistant:</span> Your assistant can be
+            created based on any text document, train your model in seconds and let Byte do the rest
           </li>
           <li>
-            <span className="font-bold">Personalized Recommendations:</span> Leveraging advanced
-            algorithms, our platform offers tailored suggestions for vendors, speakers, and
-            activities based on user preferences and event requirements.
+            <span className="font-bold">Resources optimization:</span> CalmByte AI optimizes time
+            management, helping companies reduce time waste and enhance efficiency. By automating
+            routine tasks, CalmByte AI enables businesses to focus on strategic initiatives and
+            achieve greater productivity.
           </li>
           <li>
-            <span className="font-bold">Seamless Attendee Management:</span> Users can easily manage
-            invitations, and attendee communications through intuitive interface, ensuring smooth
-            coordination before and during the event.
+            <span className="font-bold">User friendly strategy:</span> Users can easily communicate
+            with Byte through intuitive interface, ensuring smooth coordination by AI.
           </li>
         </ul>
       </div>
